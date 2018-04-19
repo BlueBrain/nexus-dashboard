@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Blue Brain Project - Nexus</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link href="./css/style.css" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/regular.js" integrity="sha384-t7yHmUlwFrLxHXNLstawVRBMeSLcXTbQ5hsd0ifzwGtN7ZF7RZ8ppM7Ldinuoiif"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="pattern"></div>
+  <header>
+    <div class="logo-block">
+      <a class="header-logo" href="./">
+        <img src="./img/logo.png" alt="" />
+      </a>
+      <h1 id="instance-name">Blue Brain Nexus</h1>
+    </div>
+    <nav class="menu-block fill" id="app-links">
+    </nav>
+    <nav class="menu-block">
+      <a href="${BASE_URI}/docs/kg" target="_blank">API docs</a>
+      <a href="https://github.com/BlueBrain/nexus#tutorials" target="_blank">Tutorials</a>
+      <!-- <a class="apps" href="#apps">Apps</a> -->
+      <a class="config" href="#">Configuration</a>
+      <ul class="apps-list">
+      </ul>
+    </nav>
+    <nav class="menu-block" id="login">
+      <a href="">login</a>
+    </nav>
+  </header>
+  <section class="content">
+    <article>
+      <a name="dashboard">
+        <h2>Nexus Stats</h2>
+      </a>
+      <div class="dashboard regular-box">
+        <section class="organizations">
+          <div class="property short-text bordered-box">
+            <div class="handle"></div>
+            <div class="container">
+              <div class="category-icon" data-for="http://schema.org/email" data-tip="Short Text" currentitem="false">
+                <img class="svg" width="64" src="./img/pyramid.svg" alt="organizations">
+              </div>
+              <div class="caption">
+                <div class="key">Organizations</div>
+                <div class="value">fetching...</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="domains">
+          <div class="property short-text bordered-box">
+            <div class="handle"></div>
+            <div class="container">
+              <div class="category-icon" data-for="http://schema.org/email" data-tip="Short Text" currentitem="false">
+                <img class="svg" width="64" src="./img/cubes.svg" alt="domains">
+              </div>
+              <div class="caption">
+                <div class="key">Domains</div>
+                <div class="value">fetching...</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="schemas">
+          <div class="property short-text bordered-box">
+            <div class="handle"></div>
+            <div class="container">
+              <div class="category-icon" data-for="http://schema.org/email" data-tip="Short Text" currentitem="false">
+                <img class="svg" width="64" src="./img/schema.svg" alt="schemas">
+              </div>
+              <div class="caption">
+                <div class="key">Schemas</div>
+                <div class="value">fetching...</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="instances">
+          <div class="property short-text bordered-box">
+            <div class="handle"></div>
+            <div class="container">
+              <div class="category-icon" data-for="http://schema.org/email" data-tip="Short Text" currentitem="false">
+                <img class="svg" width="64" src="./img/instance.svg" alt="instances">
+              </div>
+              <div class="caption">
+                <div class="key">Instances</div>
+                <div class="value">fetching...</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
+    <article class="statuses">
+      <a name="service-health">
+        <h2>Service Health</h2>
+      </a>
+      <div class="container">
+        <div class="item property short-text bordered-box" id="kg">
+          <div class="handle"></div>
+          <div class="container center">
+            <div class="category-icon" data-for="http://schema.org/email" data-tip="Short Text" currentitem="false">
+              <img class="svg" width="64" src="./img/services.svg" alt="instances">
+            </div>
+            <a href="https://github.com/BlueBrain/nexus-kg" target="_blank"><div class="key">API docs</div></a>
+            <div class="value status ok"><span>...</span> <i class="fa fa-spin fa-spinner"></i></div>
+          </div>
+        </div>
+        <div class="item property short-text bordered-box" id="iam">
+          <div class="handle"></div>
+          <div class="container center">
+            <div class="category-icon" data-for="http://schema.org/email" data-tip="Short Text" currentitem="false">
+              <img class="svg" width="64" src="./img/services.svg" alt="instances">
+            </div>
+            <a href="https://github.com/BlueBrain/nexus-iam" target="_blank"><div class="key">Nexus Iam</div></a>
+            <div class="value status ok"><span>...</span> <i class="fa fa-spin fa-spinner"></i></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <aricle class="get-started bordered-box">
+      <a name="get-started">
+        <h3>Documentation & Tutorials</h3>
+        <p>Learn What you need to get started</p>
+      </a>
+      <div class="container">
+        <div class="container links column">
+            <a href="https://github.com/BlueBrain/nexus#blue-brain-nexus---a-knowledge-graph-for-data-driven-science">Overview</a>
+            <a href="https://www.slideshare.net/BogdanRoman1/bluebrain-nexus-technical-introduction-91266871">Technical Intro Slides</a>
+            <a href="https://bbp-nexus.epfl.ch/staging/docs/kg/">Knowledge Graph</a>
+            <a href="https://bbp-nexus.epfl.ch/staging/docs/iam/">Iam</a>
+          </div>
+          <div class="container links column">
+            <a href="https://github.com/BlueBrain/nexus-admin">Nexus Admin</a>
+            <a href="https://github.com/BlueBrain/nexus#domains-schemas-vocabularies">Domains (Schemas, Vocabularies)</a>
+            <a href="https://bbp-nexus.epfl.ch/dev/schema-documentation/documentation/shacl-schemas.html#nexus-kg-schemas">Nexus KG schema tutorial</a>
+          </div>
+          <div class="container links column">
+            <a href="https://github.com/BlueBrain/nexus-python-sdk">Nexus Python SDK</a>
+            <a href="https://github.com/BlueBrain/nexus-commons">Nexus Commons SDK</a>
+          </div>
+      </div>
+    </aricle>
+    <article class="intro bordered-box">
+      <div class="nexus container">
+        <img src="./img/logo.png" class="show-off"/>
+        <div class="container column">
+          <h1>A knowledge graph for data-driven science.</h1>
+          <div class="item">
+              <a class="social" href="https://github.com/BlueBrain/nexus">
+                <img src="./img/github-logo.svg" alt=""> Github
+              </a>
+              <a class="social" href="https://gitter.im/BlueBrain/nexus">
+                <img src="./img/gitter.svg" alt=""> Gitter
+              </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <footer>
+    <a class="gh" href="https://github.com/BlueBrain/nexus">
+      <img src="./img/github-logo.svg" alt="Github link">
+    </a>
+    <a class="gt" href="https://gitter.im/BlueBrain/nexus">
+      <img src="./img/gitter.svg" alt="Gitter">
+    </a>
+    <p>Released under
+      <a href="https://opensource.org/licenses/Apache-2.0">Apache License 2.0</a>. Icons made by <a href="http://www.freepik.com/" target="_blank">Freepik</a> and <a href="https://www.flaticon.com/authors/gregor-cresnar" target="_blank">Gregor Cresnar</a> from <a href="https://www.flaticon.com" target="_blank">www.flaticon.com</a>.
+    </p>
+    <small>&copy; 2018 Blue Brain Project</small>
+  </footer>
+  <div class="overlay">
+    <section class="config bordered-box">
+      <div>
+        <label for="name">Plaform name</label>
+        <input type="text" name="name" value="" disabled>
+      </div>
+      <div>
+        <label for="email">Support email</label>
+        <input type="email" name="email" value="" disabled>
+      </div>
+      <div>
+        <label for="scope">Validation scope</label>
+        <input type="text" name="scope" value="" disabled>
+      </div>
+    </section>
+  </div>
+  <script>
+    window.BASE_URI = "${BASE_URI}";
+  </script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+[gerrit]
+host=bbpcode.epfl.ch
+port=22
+project=nexus/nexus-landing-page
+defaultbranch=master
+defaultremote=origin
