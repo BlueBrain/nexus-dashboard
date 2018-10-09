@@ -1,6 +1,6 @@
 {
   "name": "nexus-landing-page",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Interactive landing page of the Nexus Platform",
   "main": "index.js",
   "scripts": {
