@@ -4,6 +4,8 @@ import Login from './login';
 import cube from '../img/cube.svg';
 import compass from '../img/compass.svg';
 
+import { version } from "../package.json";
+
 const icons = {
   cube,
   compass
@@ -17,6 +19,8 @@ const apiPath = `${baseURI}/v0`;
 
 const user = new Login($('#login'));
 const access_token = user.token;
+
+$('#version').innerHTML = version;
 
 if (config.name) {
   $('#instance-name').textContent = config.name;

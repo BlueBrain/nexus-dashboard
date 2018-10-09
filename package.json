@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf dist && mkdir dist && parcel build index.html --public-url ./",
-    "start": "parcel serve -p 8000",
-    "test": "true"
+    "start": "parcel index.html serve -p 8000",
+    "lint": "echo \"no lint configured\"",
+    "test": "echo \"no test configured\""
   },
   "author": "BlueBrain",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@babel/core": "^7.1.2",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
