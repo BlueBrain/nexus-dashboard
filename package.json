@@ -1,6 +1,6 @@
 {
   "name": "nexus-landing-page",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Interactive landing page of the Nexus Platform",
   "main": "index.js",
   "scripts": {
@@ -11,11 +11,11 @@
   "author": "BlueBrain",
   "license": "Apache-2.0",
   "devDependencies": {
-    "babel-core": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "eslint": "^4.19.1",
-    "parcel-bundler": "^1.7.1"
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.6.1",
+    "parcel-bundler": "^1.10.2"
   },
   "dependencies": {}
 }
