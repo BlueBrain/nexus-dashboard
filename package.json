@@ -1,7 +1,8 @@
 {
   "name": "nexus-landing-page",
-  "version": "0.2.2",
+  "version": "0.2.4",
   "description": "Interactive landing page of the Nexus Platform",
+  "repository": "github:bluebrain/nexus-dashboard",
   "main": "index.js",
   "scripts": {
     "build": "rm -rf dist && mkdir dist && parcel build index.html --public-url ./",
@@ -16,8 +17,8 @@
     "babel-core": "^6.26.3",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "eslint": "^5.6.1",
-    "parcel-bundler": "^1.10.2"
+    "eslint": "^5.7.0",
+    "parcel-bundler": "^1.10.3"
   },
   "dependencies": {}
 }
