@@ -8,7 +8,7 @@ const config = {
     "icon": "compass"
   }, {
     "name": "Datamodel",
-    "url": "https://bbp-nexus.epfl.ch/dev/datamodel",
+    "url": "https://bbp-nexus.epfl.ch/staging/datamodels",
     "icon": "cube"
   }]
 };
