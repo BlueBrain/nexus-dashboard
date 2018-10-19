@@ -4,7 +4,7 @@ const config = {
   "scope": "2",
   "apps": [{
     "name": "Explorer",
-    "url": "../explorer",
+    "url": "./explorer",
     "icon": "compass"
   }, {
     "name": "Datamodel",
